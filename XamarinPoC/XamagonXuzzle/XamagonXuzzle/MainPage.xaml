@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamagonXuzzle.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+                    iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentView>
+        <StackLayout Spacing="5">
+            
+            <Label Text="BTC RULES!" x:Name="message" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+            <Button Text="New Mnemonic"
+                    Clicked="GenerateNewMnemonic"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+            <Label Text="Private Key" x:Name="priv" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+            <Button Text="New Private Key"
+                    Clicked="GeneratePrivateKey"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+
+            <Label Text="Address" x:Name="addy" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+
+            <Button Text="New Address"
+                    Clicked="GenerateAddress"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"/>
+
+
+
+        </StackLayout>
+    </ContentView>
+</ContentPage>
